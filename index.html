@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body class="playfair-display">
+ 
+    <div class="container  mt-5 ">
+      <div class="inner d-flex flex-column justify-content-center">
+        <div class=" text-center bordr pb-5">  <h1 class="head">Bookmarker</h1></div>
+
+        <div class="text-center py-5"> <h2>Bookmark your favorite sites </h2></div>
+  
+        <div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" oninput="validateForm(this)" id="siteName" placeholder="site name">
+            <label for="siteName">site name</label>
+          </div>
+  
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" oninput="validateForm(this)" id="siteUrl" placeholder="site Url">
+            <label for="siteUrl">site URL</label>
+          </div>
+  
+  <div class="p-5"><button class="btn text-white px-5 py-3 fs-4" id="subbtn">
+      Add bookmark
+   </button>
+  <button class="btn text-white  px-5 py-3 fs-4 d-none" id="upponsite" onclick="update()">
+      update bookmark
+   </button></div>
+  
+        </div>
+  
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" onblur="displayAll()" oninput="search(this)" id="siteSearch" placeholder="site Url">
+          <label for="siteSearch">search bookmarks</label>
+        </div>
+        <button class="btn text-white px-5 py-3 fs-4 m-auto" id="" onclick="displayAll()">
+        display all
+        </button>
+      </div>
+   
+
+      <div class="tbheight d-block mt-5 text-center p-5" id="notable"></div>
+    <div class="tbheight d-none mt-5" id="table">
+     
+      <table class="table" >
+        <thead class="">
+          <tr class="">
+            <th scope="col fs-4">index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">visit</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+    
+    <tbody id="newrow">
+       
+    </tbody>
+   
+    </table>
+
+    </div>              
+   
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="script/bootstrap.bundle.min.js"></script>
+
+    <script src="script/main.js"></script>
+</body>
+</html>

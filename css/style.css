@@ -1,0 +1,83 @@
+.bordr{
+    border-bottom: 2px dotted black;
+   
+}
+body{
+    background-color: antiquewhite;
+}
+.btn a.wtf{
+    text-decoration: none;
+}
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1;
+  }
+.head{
+    position: relative;
+    z-index:2;
+    display: inline;
+    font-size: 50px;
+}
+.head::after{
+    position: absolute;
+    top:60%;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: rgb(255, 0, 174);
+    content:"";
+    width:100%;
+    z-index: -1;
+    transition: all .4s;
+
+}
+h2{
+position: relative;
+display:inline-block;
+color: blueviolet;
+font-size: 50px;
+
+}
+h2::after{ 
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background:linear-gradient(to right, rgba(255, 223, 172, 0.4), rgba(255, 162, 232, 0.4));
+    content:"";
+    width:100%;
+    z-index: 1;
+    transition: all .4s;
+
+}
+.head:hover::after{
+    top:40%;
+    background-color: rgb(127, 34, 233);
+}
+
+.form-floating .form-control{
+    border: none;
+    border-bottom: 1px solid rgb(199, 194, 194);
+}
+
+.form-control:focus{
+    box-shadow:none;
+}
+.tbheight{
+    height:50vh;
+    border: 1px solid rgb(225, 223, 223);
+    background: linear-gradient(to right, rgba(255, 223, 172, 0.4), rgba(253, 255, 162, 0.4));
+}
+.btn:focus{
+    box-shadow: none;
+    outline:0;
+    border-color: transparent;
+}
+.inner .btn{
+    background-color: rgb(50, 32, 42);
+}
